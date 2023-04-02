@@ -1,6 +1,6 @@
 import scrapy
 import datetime
-from ..items import ComitItem
+from ..items import ComicItem
 from sqlalchemy import (
     create_engine,
     MetaData,
@@ -63,8 +63,7 @@ class ComicSpider(scrapy.Spider):
             )
 
     def parse2(self, response, href, title):
-        item = ComitItem()
-        # item["title"] = title
+        item = ComicItem()
         item["title"] = title
         item["href"] = href
         item["page_link"] = response.url

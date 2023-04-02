@@ -12,7 +12,7 @@ class DoupocangqiongscrapyItem(scrapy.Item):
     pass
 
 
-class ComitItem(scrapy.Item):
+class ComicItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     title = scrapy.Field()  # 章节标题

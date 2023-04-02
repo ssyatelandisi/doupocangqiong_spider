@@ -1,4 +1,4 @@
-source activate python3.7
+source activate python3.7_x86
 pyrcc5 res.qrc -o res_rc.py
 pyuic5 Contents.ui -o Contents.py
 pyuic5 TextContent.ui -o TextContent.py
